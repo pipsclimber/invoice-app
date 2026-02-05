@@ -84,9 +84,9 @@ const InvoiceTemplate = (data: InvoiceType) => {
 					</div>
 					<div className='hidden sm:block border-b border-gray-200'></div>
 					<div className='grid grid-cols-3 sm:grid-cols-5 gap-y-1'>
-						{details.items.map((item: { name: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; description: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; quantity: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; unitPrice: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; total: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; }, index: React.Key | null | undefined) => (
+						{/* {details.items.map((item: { name: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; description: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; quantity: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; unitPrice: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; total: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; }, index: React.Key | null | undefined) => (
 							<React.Fragment key={index}>
-								<div className='col-span-full sm:col-span-2 border-b border-gray-300'>
+							<>	<div className='col-span-full sm:col-span-2 border-b border-gray-300'>
 									<p className='font-medium text-gray-800'>{item.name}</p>
 									<p className='text-xs text-gray-600 whitespace-pre-line'>{item.description}</p>
 								</div>
@@ -103,8 +103,10 @@ const InvoiceTemplate = (data: InvoiceType) => {
 										{item.total} {details.currency}
 									</p>
 								</div>
+
+							</>
 							</React.Fragment>
-						))}
+						))} */}
 					</div>
 					<div className='sm:hidden border-b border-gray-200'></div>
 				</div>
