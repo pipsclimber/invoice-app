@@ -1,7 +1,5 @@
 "use client";
 
-// React Signature Canvas
-import SignatureCanvas from "react-signature-canvas" with { type: "commonjs" };
 
 // ShadCn
 import { Card, CardContent } from "@/components/ui/card";
