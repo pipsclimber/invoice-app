@@ -6,12 +6,12 @@ import { Toaster } from "@/components/ui/toaster";
 import Providers from "@/contexts/Providers";
 // Fonts
 import {
-    alexBrush,
-    dancingScript,
-    greatVibes,
-    outfit,
-    parisienne,
-} from "@/lib/fonts";
+     Playfair_Display,
+    Montserrat,
+    Poppins,
+    Lora,
+    Raleway,
+} from "next/font/google";
 // SEO
 import { JSONLD, ROOTKEYWORDS } from "@/lib/seo";
 // Variables
@@ -85,7 +85,8 @@ export default async function LocaleLayout(props: {
                 />
             </head>
             <body
-                className={`${outfit.className} ${dancingScript.variable} ${parisienne.variable} ${greatVibes.variable} ${alexBrush.variable} antialiased bg-slate-100 dark:bg-slate-800`}
+            className={`
+                 antialiased bg-slate-100 dark:bg-slate-800`}
                 suppressHydrationWarning
             >
                 <NextIntlClientProvider locale={locale} messages={messages}>

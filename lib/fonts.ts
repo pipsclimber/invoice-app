@@ -1,48 +1,35 @@
 // Next Google Fonts
 import {
-    Alex_Brush,
-    Dancing_Script,
-    Great_Vibes,
-    Outfit,
-    Parisienne,
+    Playfair_Display,
+    Montserrat,
+    Poppins,
+    Lora,
+    Raleway,
 } from "next/font/google";
 
-// Default Fonts
-export const outfit = Outfit({
+export const playfair = Playfair_Display({
     subsets: ["latin"],
-    display: "swap",
-    adjustFontFallback: false,
+    weight: ["400", "500", "600", "700"],
 });
 
-// Signature fonts
-export const dancingScript = Dancing_Script({
+export const montserrat = Montserrat({
     subsets: ["latin"],
-    weight: "400",
-    variable: "--font-dancing-script",
-    preload: true,
-    display: "swap",
+    weight: ["300", "400", "500", "600", "700"],
 });
 
-export const parisienne = Parisienne({
+export const poppins = Poppins({
     subsets: ["latin"],
-    weight: "400",
-    variable: "--font-parisienne",
-    preload: true,
-    display: "swap",
+    weight: ["300", "400", "500", "600", "700"],
 });
 
-export const greatVibes = Great_Vibes({
+export const lora = Lora({
     subsets: ["latin"],
-    weight: "400",
-    variable: "--font-great-vibes",
-    preload: true,
-    display: "swap",
+    weight: ["400", "500", "600", "700"],
 });
 
-export const alexBrush = Alex_Brush({
+export const raleway = Raleway({
     subsets: ["latin"],
-    weight: "400",
-    variable: "--font-alex-brush",
-    preload: true,
-    display: "swap",
+    weight: ["300", "400", "500", "600", "700"],
 });
+export { Playfair_Display };
+
