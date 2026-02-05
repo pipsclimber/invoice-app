@@ -1,7 +1,7 @@
 "use client";
 
 // React Signature Canvas
-import SignatureCanvas from "react-signature-canvas";
+import SignatureCanvas from "react-signature-canvas" with { type: "commonjs" };
 
 // ShadCn
 import { Card, CardContent } from "@/components/ui/card";
@@ -46,7 +46,7 @@ const DrawSignature = ({ handleSaveSignature }: DrawSignatureProps) => {
                         }}
                     >
                         {/* Signature Canvas to draw signature */}
-                        <SignatureCanvas
+                        {/* <SignatureCanvas
                             velocityFilterWeight={1} // Adjust the velocityFilterWeight to make the pen lighter
                             minWidth={1.4} // Adjust the minWidth for a finer line
                             maxWidth={1.4} // Adjust the maxWidth for a finer line
@@ -62,7 +62,7 @@ const DrawSignature = ({ handleSaveSignature }: DrawSignatureProps) => {
                                 },
                             }}
                             onEnd={handleCanvasEnd}
-                        />
+                        /> */}
                     </div>
                 </CardContent>
                 <div className="flex justify-between gap-2 pt-2">
